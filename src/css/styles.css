@@ -23,3 +23,23 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+@font-face {
+  font-family: 'Impact';
+  src: url(../fonts/impact.ttf) format('ttf'),
+    url(../fonts/impact.woff2) format('woff2');
+}
+
+.logo-text {
+  font-family: 'Impact', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.logo-text span {
+  color: #00b068;
+}
