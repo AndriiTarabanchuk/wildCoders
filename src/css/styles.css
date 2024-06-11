@@ -5,8 +5,16 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./section/header.css');
+@import url('./section/hero.css');
+@import url('./section/aboutme.css');
+@import url('./section/techSkills.css');
+@import url('./section/myprojects.css');
+@import url('./section/benefits..css');
+@import url('./section/faq.css');
+@import url('./section/reviews.css');
+@import url('./section/worktog.css');
+@import url('./section/footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -14,7 +22,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
+  color: #292929;
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -24,6 +32,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
 @font-face {
   font-family: 'Impact';
   src: url(../fonts/impact.ttf) format('ttf'),
