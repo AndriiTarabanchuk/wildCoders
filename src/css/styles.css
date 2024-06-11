@@ -10,7 +10,7 @@
 @import url('./section/aboutme.css');
 @import url('./section/techSkills.css');
 @import url('./section/myprojects.css');
-@import url('./section/benefits..css');
+@import url('./section/benefits.css');
 @import url('./section/faq.css');
 @import url('./section/reviews.css');
 @import url('./section/worktog.css');
@@ -35,6 +35,7 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 @font-face {
   font-family: 'Impact';
   src: url(../fonts/impact.ttf) format('ttf'),
@@ -53,4 +54,27 @@ body {
 
 .logo-text span {
   color: #00b068;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
