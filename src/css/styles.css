@@ -44,14 +44,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-[dark] {
-  --var-text: #f0f0f0;
-  --var-text-green: #14c57c;
-  --var-bg: #1e2023;
-  --var-bg-gray: #2a2d32;
-  --var-accent: #204136;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
 }
