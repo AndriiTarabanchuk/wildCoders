@@ -13,8 +13,9 @@
 }
 
 .techskills-container {
+  background-color: var(--var-bg);
+  width: 110%;
   height: 245px;
-  overflow: hidden;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -27,12 +28,9 @@
 .skills-upper-line,
 .skills-lower-line {
   display: flex;
-  flex-shrink: 0;
   margin: 0;
   padding: 40px 16px;
   width: 100%;
-  white-space: nowrap;
-  /* animation: skillsLine 10s linear infinite; */
 }
 
 .skills-upper-line {
@@ -46,14 +44,18 @@
 .skills-lower-line {
   color: var(--var-text-green);
   background-color: var(--var-bg-gray);
-  transform: rotate(5deg) translateY(-30px);
-  transform-origin: top left;
+  transform: rotate(2deg) translateY(-10px);
+  /* transform-origin: top left; */
   position: absolute;
   top: 130px;
 }
 
 .skills-list {
+  overflow: hidden;
+  flex-shrink: 0;
   display: flex;
+  white-space: nowrap;
+  animation: skillsLine 10s linear infinite;
 }
 
 .skills-item-upper,
@@ -65,13 +67,17 @@
   padding-right: 22px;
 }
 
+.skills-item-upper {
+  color: var(--var-text);
+}
+
 .skills-item-upper::before {
   content: '';
   width: 8px;
   height: 8px;
   border-radius: 2px;
   left: 0;
-  background-color: #00b068;
+  background-color: var(--var-text-green);
   position: absolute;
 }
 
@@ -81,7 +87,7 @@
   height: 8px;
   border-radius: 2px;
   left: 0;
-  background-color: #292929;
+  background-color: var(--var-text);
   position: absolute;
 }
 
