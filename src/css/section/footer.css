@@ -77,3 +77,8 @@
     margin-bottom: 0;
   }
 }
+
+.dark-theme {
+  color: #f0f0f0;
+  background-color: #1e2023;
+}
