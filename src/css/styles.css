@@ -14,7 +14,7 @@
 /* @import url('./section/faq.css'); */
 /* @import url('./section/reviews.css'); */
 /* @import url('./section/worktog.css'); */
-/* @import url('./section/footer.css'); */
+@import url('./section/footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
