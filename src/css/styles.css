@@ -6,15 +6,21 @@
 */
 @import url('./reset.css');
 @import url('./section/header.css');
-/* @import url('./section/hero.css'); */
-/* @import url('./section/aboutme.css'); */
-/* @import url('./section/techSkills.css'); */
-/* @import url('./section/myprojects.css'); */
-/* @import url('./section/benefits.css'); */
-/* @import url('./section/faq.css'); */
-/* @import url('./section/reviews.css'); */
-/* @import url('./section/worktog.css'); */
-/* @import url('./section/footer.css'); */
+@import url('./section/hero.css');
+@import url('./section/aboutme.css');
+@import url('./section/techSkills.css');
+@import url('./section/myprojects.css');
+@import url('./section/benefits.css');
+@import url('./section/faq.css');
+@import url('./section/reviews.css');
+@import url('./section/worktog.css');
+@import url('./section/footer.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   --var-text: #292929;
@@ -43,7 +49,7 @@
   --var-text-green: #14c57c;
   --var-bg: #1e2023;
   --var-bg-gray: #2a2d32;
-  --var-accent-light: #204136;
+  --var-accent: #204136;
 }
 
 body {
