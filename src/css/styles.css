@@ -16,12 +16,6 @@
 @import url('./section/worktog.css');
 @import url('./section/footer.css');
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
   --var-text: #292929;
   --var-text-green: #00b068;
