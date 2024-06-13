@@ -13,6 +13,7 @@
 }
 
 .techskills-container {
+  overflow: hidden;
   background-color: var(--var-bg);
   width: 110%;
   height: 245px;
@@ -29,7 +30,7 @@
 .skills-lower-line {
   display: flex;
   margin: 0;
-  padding: 40px 16px;
+  padding: 32px 16px;
   width: 100%;
 }
 
@@ -44,14 +45,12 @@
 .skills-lower-line {
   color: var(--var-text-green);
   background-color: var(--var-bg-gray);
-  transform: rotate(2deg) translateY(-10px);
-  /* transform-origin: top left; */
+  transform: rotate(2deg) translateY(-25px);
   position: absolute;
   top: 130px;
 }
 
 .skills-list {
-  overflow: hidden;
   flex-shrink: 0;
   display: flex;
   white-space: nowrap;
@@ -63,7 +62,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 22px;
+  padding-left: 30px;
   padding-right: 22px;
 }
 
@@ -98,4 +97,25 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+@media screen and (min-width: 768px) {
+  .techskills-container {
+    height: 282px;
+    font-size: 36px;
+    line-height: 1.3; /* 133.333% */
+    letter-spacing: 0.01em;
+  }
+
+  .skills-upper-line,
+  .skills-lower-line {
+    padding: 40px 16px;
+  }
+
+  .skills-lower-line {
+    transform: rotate(2deg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
 }
