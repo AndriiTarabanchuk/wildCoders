@@ -1,1 +1,19 @@
 /**/
+.worktog {
+}
+.worktog-wrap {
+}
+.worktog-title {
+}
+.desc-tab-h2 {
+}
+.worktog-star {
+  fill: var(--var-text-green);
+}
+
+.worktog-link {
+  width: 24px;
+  height: 24px;
+  fill: transparent;
+  stroke: var(--var-text-green);
+}
