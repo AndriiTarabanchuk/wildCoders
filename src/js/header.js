@@ -1,7 +1,17 @@
+const body = document.querySelector('body');
+
 const btn = document.querySelector('.mob-menu-btn');
 const burger = document.querySelector('.header-burger');
 const modal = document.querySelector('.mob-menu');
 const menuList = document.querySelector('.mob-menu-list');
+
+function lockScroll() {
+  body.classList.add('noscroll');
+}
+
+function unLockScroll() {
+  body.classList.remove('noscroll');
+}
 
 menuList.addEventListener('click', () => {
   modal.classList.remove('mob-menu-active');
@@ -13,8 +23,10 @@ btn.addEventListener('click', () => {
 
   if (!burger.classList.contains('active')) {
     modal.classList.remove('mob-menu-active');
+    unLockScroll();
   } else {
     modal.classList.add('mob-menu-active');
+    lockScroll();
   }
 });
 
@@ -40,6 +52,7 @@ function screenWidth() {
     switcherWrapper.innerHTML = fragment;
     modal.classList.remove('mob-menu-active');
     burger.classList.remove('active');
+    unLockScroll();
   }
   initDom();
 }
