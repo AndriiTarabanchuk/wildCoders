@@ -39,11 +39,14 @@
   font-weight: 300;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.03em;
-  transition: color 200ms linear;
+  transition: color 200ms cubic-bezier(0.19, 1, 0.22, 1),
+    color 200ms cubic-bezier(0.19, 1, 0.22, 1);
+  display: inline-block;
 }
 
 .socmedia-link:hover {
   color: var(--var-text-green);
+  transform: scale(1.1);
 }
 
 .copyright-container {
