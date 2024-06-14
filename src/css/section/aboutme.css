@@ -9,7 +9,7 @@
 .aboutme-container {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: var(--var-bg);
+  background-color: rgb(var(--var-bg));
 }
 
 .aboutme-title {
@@ -22,7 +22,7 @@
 }
 
 .aboutme-title-part {
-  color: var(--var-text-green);
+  color: rgb(var(--var-text-green));
 }
 
 .aboutme-first-block {
@@ -87,7 +87,7 @@
   width: 4px;
   height: 4px;
   border-radius: 1px;
-  background-color: var(--var-text-green);
+  background-color: rgb(var(--var-text-green));
   display: block;
 }
 
@@ -110,7 +110,7 @@
   width: 4px;
   height: 4px;
   border-radius: 1px;
-  background-color: var(--var-text-green);
+  background-color: rgb(var(--var-text-green));
   display: block;
 }
 

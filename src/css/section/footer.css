@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--var-bg);
+  background-color: rgb(var(--var-bg));
 }
 
 .footer-wrapper {
@@ -33,7 +33,7 @@
 }
 
 .socmedia-link {
-  color: var(--var-text);
+  color: rgb(var(--var-text));
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -45,7 +45,7 @@
 }
 
 .socmedia-link:hover {
-  color: var(--var-text-green);
+  color: rgb(var(--var-text-green));
   transform: scale(1.1);
 }
 
@@ -53,7 +53,7 @@
 }
 
 .copyright-text {
-  color: var(--var-text);
+  color: rgb(var(--var-text));
   text-align: center;
 
   /* Desktop-Tablet/body 1 */
