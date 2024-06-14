@@ -13,7 +13,7 @@
 }
 
 .aboutme-title {
-  font-family: 'Impact';
+  font-family: 'Impact', sans-serif;
   font-size: 52px;
   line-height: 1.23;
   letter-spacing: 0.04em;
@@ -40,7 +40,7 @@
 
 .aboutme-subtitle {
   margin-bottom: 32px;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.25;
@@ -49,7 +49,7 @@
 }
 
 .aboutme-text {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -80,10 +80,10 @@
 }
 
 .education-list-item::before {
+  content: '';
   position: absolute;
   left: 10px;
   top: 10px;
-  content: '';
   width: 4px;
   height: 4px;
   border-radius: 1px;
@@ -197,6 +197,7 @@
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    margin: 0 au;
   }
 
   .aboutme-container {
