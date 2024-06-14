@@ -5,16 +5,17 @@
   |============================
 */
 @import url('./reset.css');
-/* @import url('./section/header.css'); */
-/* @import url('./section/hero.css'); */
-/* @import url('./section/aboutme.css'); */
-/* @import url('./section/techSkills.css'); */
-/* @import url('./section/myprojects.css'); */
-/* @import url('./section/benefits.css'); */
-/* @import url('./section/faq.css'); */
-/* @import url('./section/reviews.css'); */
-/* @import url('./section/worktog.css'); */
+@import url('./section/header.css'); 
+@import url('./section/hero.css'); 
+@import url('./section/aboutme.css');
+@import url('./section/techskills.css');
+@import url('./section/myprojects.css');
+@import url('./section/benefits.css');
+@import url('./section/faq.css');
+@import url('./section/reviews.css');
+@import url('./section/worktog.css');
 @import url('./section/footer.css');
+
 
 :root {
   --var-text: #292929;
@@ -45,7 +46,13 @@
   --var-bg-gray: #2a2d32;
   --var-accent-light: #204136;
 }
-
+[dark-fiol] {
+  --var-text: #f0f0f0;
+  --var-text-green: #925ae0;
+  --var-bg: #1e2023;
+  --var-bg-gray: #2a2d32;
+  --var-accent-light: #312640;
+}
 [light] {
   --var-text: #292929;
   --var-text-green: #00b068;
@@ -54,6 +61,13 @@
   --var-accent: #bcdfd1;
 }
 
+[light-fiol] {
+  --var-text: #292929;
+  --var-text-green: #a13997;
+  --var-bg: #f0f0f0;
+  --var-bg-gray: #e4e5e6;
+  --var-accent: #e5cacf;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
