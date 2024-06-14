@@ -47,7 +47,12 @@
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 .benefits-text {
   color: rgb(var(--var-text));
   /* Desktop-Tablet/body 1 */
@@ -70,13 +75,6 @@
   align-items: center;
   border-radius: 8px;
   background: rgba(var(--var-text-green), 0.1);
-}
-
-.benefits-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
 }
 
 .benefits-icon svg {
