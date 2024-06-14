@@ -1,3 +1,7 @@
+# figma https://www.figma.com/design/JJBu6X0fAeZ8CVcwSXSYsD/Portfolio-2.0?node-id=0-1&t=YCSLwoB6X2JReGgo-0
+
+# trello https://trello.com/b/eyQvOgD2/project-team-11-wild-coders
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування
