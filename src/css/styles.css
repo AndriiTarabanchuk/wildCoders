@@ -6,16 +6,17 @@
 */
 
 @import url('./reset.css');
-@import url('./sections/header.css');
-@import url('./sections/hero.css');
-@import url('./sections/aboutme.css');
-@import url('./sections/techSkills.css');
-@import url('./sections/myprojects.css');
-@import url('./sections/benefits.css');
-@import url('./sections/faq.css');
-@import url('./sections/reviews.css');
-@import url('./sections/worktog.css');
-@import url('./sections/footer.css');
+@import url('./section/header.css'); 
+@import url('./section/hero.css'); 
+@import url('./section/aboutme.css');
+@import url('./section/techskills.css');
+@import url('./section/myprojects.css');
+@import url('./section/benefits.css');
+@import url('./section/faq.css');
+@import url('./section/reviews.css');
+@import url('./section/worktog.css');
+@import url('./section/footer.css');
+
 
 :root {
   font-size: 16px;
