@@ -6,13 +6,8 @@
 */
 
 @import url('./reset.css');
-<<<<<<< HEAD
 @import url('./section/header.css');
 @import url('./section/hero.css');
-=======
-@import url('./section/header.css'); 
-@import url('./section/hero.css'); 
->>>>>>> origin/main
 @import url('./section/aboutme.css');
 @import url('./section/techskills.css');
 @import url('./section/myprojects.css');
@@ -21,15 +16,6 @@
 @import url('./section/reviews.css');
 @import url('./section/worktog.css');
 @import url('./section/footer.css');
-
-<<<<<<< HEAD
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-=======
->>>>>>> origin/main
 
 :root {
   font-size: 16px;
@@ -53,20 +39,12 @@
 }
 
 [dark] {
-<<<<<<< HEAD
-  --var-text: #f0f0f0;
-  --var-text-green: #14c57c;
-  --var-bg: #1e2023;
-  --var-bg-gray: #2a2d32;
-  --var-accent: #204136;
-=======
   --var-text: 240, 240, 240; /* 1e2023 */
   --var-text-green: 20, 197, 124; /* #14c57c */
   --var-bg: 30, 32, 35; /* #f0f0f0 */
   --var-bg-gray: 42, 45, 50; /* #2a2d32 */
   --var-accent: 32, 65, 54; /* #204136 */
   --var-grey-hover: 59, 63, 69; /* #BBBBB */
->>>>>>> origin/main
 }
 
 /*
