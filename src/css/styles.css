@@ -4,9 +4,15 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
+<<<<<<< HEAD
 @import url('./section/header.css');
 @import url('./section/hero.css');
+=======
+@import url('./section/header.css'); 
+@import url('./section/hero.css'); 
+>>>>>>> origin/main
 @import url('./section/aboutme.css');
 @import url('./section/techskills.css');
 @import url('./section/myprojects.css');
@@ -16,93 +22,60 @@
 @import url('./section/worktog.css');
 @import url('./section/footer.css');
 
+<<<<<<< HEAD
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+=======
+>>>>>>> origin/main
 
 :root {
-  --var-text: #292929;
-  --var-text-green: #00b068;
-  --var-bg: #f0f0f0;
-  --var-bg-gray: #e4e5e6;
-  --var-accent: #bcdfd1;
-
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #292929;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: rgb(var(--var-text));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --var-text: 41, 41, 41; /* #292929 */
+  --var-text-green: 0, 176, 104; /* #00b068 */
+  --var-bg: 240, 240, 240; /* #f0f0f0 */
+  --var-bg-gray: 228, 229, 230; /* #e4e5e6 */
+  --var-accent: 188, 223, 209; /* #bcdfd1 */
+  --var-grey-hover: 187, 187, 187; /* #BBBBB */
 }
 
 [dark] {
+<<<<<<< HEAD
   --var-text: #f0f0f0;
   --var-text-green: #14c57c;
   --var-bg: #1e2023;
   --var-bg-gray: #2a2d32;
   --var-accent: #204136;
+=======
+  --var-text: 240, 240, 240; /* 1e2023 */
+  --var-text-green: 20, 197, 124; /* #14c57c */
+  --var-bg: 30, 32, 35; /* #f0f0f0 */
+  --var-bg-gray: 42, 45, 50; /* #2a2d32 */
+  --var-accent: 32, 65, 54; /* #204136 */
+  --var-grey-hover: 59, 63, 69; /* #BBBBB */
+>>>>>>> origin/main
 }
 
-[light] {
-  --var-text: #292929;
-  --var-text-green: #00b068;
-  --var-bg: #f0f0f0;
-  --var-bg-gray: #e4e5e6;
-  --var-accent: #bcdfd1;
-}
+/*
+Використання змінних кольорів:
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
+color: rgb(var(--var-text))
 
-@font-face {
-  font-family: 'Impact';
-  src: url(../fonts/impact.ttf) format('ttf'),
-    url(../fonts/impact.woff2) format('woff2');
-}
+Якщо потрібна прозорість:
 
-.logo-text {
-  font-family: 'Impact', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1.5px;
-  color: var(--var-text);
-  text-transform: uppercase;
-}
+color: rgba(var(--var-text), 0.1)
 
-.logo-text span {
-  color: var(--var-text-green);
-}
-
-.container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-}
+*/
