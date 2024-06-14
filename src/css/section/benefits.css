@@ -4,17 +4,17 @@ ul {
 
 .benefits {
   padding: 80px 20px 0 20px;
-  background-color: r;
-  position: relative;
+  background-color: rgb(var(--var-bg));
 }
 
 .benefits-container {
   max-width: 360px;
   margin: 0 auto;
+  position: relative;
 }
 
 .benefits-title {
-  color: rgb(var(--var-text));
+  color: rgb(var(--var-bg));
   /* Mobile/h2-360 */
   font-family: Impact;
   font-size: 52px;
@@ -23,14 +23,13 @@ ul {
   line-height: 64px;
   letter-spacing: 1.8px;
   text-transform: uppercase;
-
   margin-bottom: 40px;
 }
 
 .benefits-title-additional {
   color: rgb(var(--var-text-green));
   /* Mobile/h2-360 */
-  font-family: Impact;
+  font-family: 'Impact', sans-serif;
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
@@ -60,7 +59,7 @@ ul {
 .benefits-text {
   color: rgb(var(--var-text));
   /* Desktop-Tablet/body 1 */
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -76,7 +75,6 @@ ul {
   padding: 12px;
   justify-content: center;
   align-items: center;
-
   border-radius: 8px;
   background: rgba(var(--var-text-green), 0.1);
 }
@@ -120,7 +118,7 @@ ul {
   .benefits-title-additional {
     color: rgb(var(--var-text-green));
     /* Desktop-Tablet/H2 */
-    font-family: Impact;
+    font-family: 'Impact', sans-serif;
     font-size: 108px;
     font-style: normal;
     font-weight: 400;
@@ -133,7 +131,7 @@ ul {
   .benefits-title {
     color: rgb(var(--var-text));
     /* Desktop-Tablet/H2 */
-    font-family: Impact;
+    font-family: 'Impact', sans-serif;
     font-size: 108px;
     font-style: normal;
     font-weight: 400;
@@ -146,7 +144,7 @@ ul {
   .benefits-subtitle {
     color: rgb(var(--var-text));
     /* Desktop-Tablet/caption */
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
