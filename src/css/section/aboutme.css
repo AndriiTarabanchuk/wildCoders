@@ -153,6 +153,10 @@
   .aboutme-container {
     padding-top: 124px;
     padding-bottom: 124px;
+    background-image: url('/img/backgrounds/decor-bg-2.png');
+    background-repeat: no-repeat;
+    background-size: 336px 252px;
+    background-position: top 856px right 32px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
