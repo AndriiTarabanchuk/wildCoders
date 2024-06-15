@@ -1,25 +1,25 @@
 .worktog {
   background-color: rgb(var(--var-bg));
+  color: rgb(var(--var-text));
 }
 .worktog-wrap {
   min-width: 320px;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 50px;
-  color: rgb(var(--var-text));
+  max-width: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
 }
 
 .worktog-title {
-  color: rgb(var(--var-text));
   /* //styleName: Mobile/h2-360; */
   font-family: 'Impact', sans-serif;
   font-size: 52px;
   font-weight: 400;
   line-height: 64px;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
 }
@@ -29,7 +29,7 @@
 }
 
 .worktog-first {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -44,7 +44,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
 }
@@ -65,20 +65,21 @@
 /* .worktog-link {
 } */
 .worktog-form {
+  width: 100%;
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.02em;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
-.worktog-bg {
+/* .worktog-bg {
   display: none;
-}
-.form-field .form-field {
-  margin-top: 32px;
-}
+} */
 
 .form-input {
   width: 100%;
@@ -105,7 +106,6 @@
   color: #e74a3b;
 }
 .form-message {
-  margin-top: 32px;
   width: 100%;
   height: 128px;
   padding: 8px 16px;
@@ -125,97 +125,80 @@
     3px 3px 10px rgb(var(--var-bg-gray));
 }
 .form-btn {
+  width: 100%;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
-  color: rgb(var(--var-bg));
-  background-color: rgb(var(--var-accent));
+  color: rgba(var(--var-bg));
+  background-color: rgba(var(--var-text-green));
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .form-btn:hover,
 .form-btn:active {
-  background-color: rgb(var(--var-text-green));
+  background-color: #009156;
 }
-/* @media screen and (min-width: 360px) {
-  .container {
-    max-width: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    max-width: 0 auto;
-  }
-} */
+
 @media screen and (min-width: 768px) {
-  .container {
+  .worktog-wrap {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     max-width: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .worktog-wrap {
-    padding-top: 124px;
-  }
-  .worktog-wrap {
-    background-image: url('./img/worktog/decor-bg-4-1x-tab.png');
+    background-image: url('./img/worktog/decor-bg-4-des-1x.png');
     background-repeat: no-repeat;
-    background-size: 384px 288px;
+    background-size: 336px 260px;
     background-position: top 10px right 32px;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
+  /* @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .aboutme-container {
-      background-image: url('./img/worktog/decor-bg-4-2x-tab.png');
+      background-image: url('/img/backgrounds/decor-bg-2-2x.png');
     }
+  } */
+
+  .worktog-form {
+    width: 100%;
   }
-  /* .worktog-bg {
-    display: block;
-  } */
-  /* .worktog-bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 336px;
-    height: 260px;
-  } */
-  /* .worktog-bg svg {
-    stroke: rgb(var(--var-text-green));
-    fill: transparent;
-    filter: blur(2.5px);
-    z-index: -1;
-  } */
+  .form-btn {
+    align-self: flex-start;
+    width: 173px;
+  }
 }
+
 @media screen and (min-width: 1280px) {
   .worktog-wrap {
     padding-top: 164px;
-  }
-  .worktog-wrap {
     background-image: url('/img/worktog/decor-bg-4-1x-dec.png');
     background-repeat: no-repeat;
-    background-size: 384px 288px;
-    background-position: top 692px right 32px;
+    background-size: 526px 408px;
+    background-position: top 20px right 32px;
   }
-
+  /* 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .aboutme-container {
       background-image: url('/img/worktog/decor-bg-4-2x-dec.png');
     }
-  }
+  } */
+
   .worktog-soc {
-    width: 488px;
+    width: 592px;
+  }
+  .worktog-form {
+    width: 592px;
+  }
+  .form-btn {
+    align-self: flex-start;
+    width: 173px;
   }
   .worktog-first {
     flex-direction: row;
@@ -223,34 +206,5 @@
   .worktog-form {
     margin-left: 164px;
     width: 592px;
-  }
-}
-
-.container.worktog {
-  max-width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 375px) {
-  .container.worktog {
-    max-width: 375px;
-    padding-left: 32px;
-    padding-right: 32px;
-    max-width: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container.worktog {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-    max-width: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container.worktog {
-    max-width: 1280px;
-    margin: 0 auto;
   }
 }
