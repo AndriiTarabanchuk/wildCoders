@@ -205,7 +205,7 @@
   }
 
   .benefits-title {
-    color: rgb(var(--Black, #292929));
+    color: rgb(var(--var-text));
     /* Desktop-Tablet/H2 */
     font-family: 'Impact', sans-serif;
     font-size: 108px;
