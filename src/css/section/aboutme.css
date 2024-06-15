@@ -1,19 +1,16 @@
-.container {
+#aboutme {
+  background-color: rgb(var(--var-bg));
+}
+
+.aboutme-container {
   max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.aboutme-container {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: rgb(var(--var-bg));
-  background-image: url('/img/backgrounds/decor-bg-2.png');
-  background-repeat: no-repeat;
-  background-size: 330px 252px;
-  background-position: 394px 842px;
 }
 
 .aboutme-title {
@@ -125,12 +122,17 @@
 /* ===============MEDIA 768============== */
 
 @media screen and (min-width: 768px) {
-  .container {
+  
+  .aboutme-container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 124px;
     padding-bottom: 124px;
+    background-image: url("/img/backgrounds/decor-bg-2-2x.png");
+    background-repeat: no-repeat;
+    background-size: 330px 252px;
+    background-position: 394px 968px;
   }
 
   .aboutme-title {
@@ -161,7 +163,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .aboutme-container {
-            background-image: url('/img/backgrounds/decor-bg-2.png');
+            background-image: url('/img/backgrounds/decor-bg-2-2x.png');
         }
     }
   
@@ -184,16 +186,13 @@
 
 @media screen and (min-width: 1280px) {
 
-    .container {
-        max-width: 1280px;
-    }
-
-    .aboutme-container {
-        padding-top: 164px;
-        padding-bottom: 164px;
-        background-size: 380px 258px;
-        background-position: 864px 692px;
-    }
+  .aboutme-container {
+    max-width: 1280px;
+    padding-top: 164px;
+    padding-bottom: 164px;
+    background-size: 380px 258px;
+    background-position: 864px 856px;
+  }
 
   .aboutme-bio-list {
     margin-bottom: 232px;
@@ -214,7 +213,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .aboutme-container {
-            background-image: url('/img/backgrounds/decor-bg-2.png');
+            background-image: url('/img/backgrounds/decor-bg-2-2x.png');
         }
     }
 
