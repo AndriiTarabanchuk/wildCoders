@@ -1,3 +1,6 @@
+.faq-section {
+  background-color: rgb(var(--var-bg));
+}
 .faq-container {
   min-width: 320px;
   width: 100%;
