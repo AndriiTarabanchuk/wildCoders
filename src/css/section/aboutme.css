@@ -7,35 +7,17 @@
 }
 
 .aboutme-container {
-
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: rgb(var(--var-bg));
-    background-image: url("/img/backgrounds/decor-bg-2.png");
-    background-repeat: no-repeat;
-    background-size: 333px 226px;
-    background-position: 400px 980px;
-}
-
-.aboutme-title {
-    color: rgb(var(--var-text));
-    font-family: 'Impact';
-    font-size: 52px;
-    line-height: 1.23;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-
-.aboutme-title-part {
-    color: rgb(var(--var-text-green));
-
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: rgb(var(--var-bg));
+  background-image: url('/img/backgrounds/decor-bg-2.png');
+  background-repeat: no-repeat;
+  background-size: 330px 252px;
+  background-position: 394px 842px;
 }
 
 .aboutme-title {
+  color: rgb(var(--var-text));
   font-family: 'Impact', sans-serif;
   font-size: 52px;
   line-height: 1.23;
@@ -46,7 +28,6 @@
 
 .aboutme-title-part {
   color: rgb(var(--var-text-green));
-
 }
 
 .aboutme-first-block {
@@ -63,7 +44,6 @@
 }
 
 .aboutme-subtitle {
-
     color: rgb(var(--var-text));
     margin-bottom: 32px;
     font-family: "Poppins", sans-serif;
@@ -116,7 +96,6 @@
   border-radius: 1px;
   background-color: rgb(var(--var-text-green));
   display: block;
-  z-index:-1;
 }
 
 .aboutme-role-list {
@@ -131,7 +110,6 @@
 }
 
 .role-list-item::before {
-
   position: absolute;
   left: 6px;
   top: 10px;
@@ -158,21 +136,6 @@
     padding-bottom: 124px;
   }
 
-
-    @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .aboutme-container {
-            background-image: url("/img/backgrounds/decor-bg-2-2x.png");
-        }
-    }
-
-    .aboutme-second-block {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
-    }
-
   .aboutme-title {
     font-size: 108px;
     line-height: 1.15;
@@ -197,37 +160,19 @@
     margin-bottom: 80px;
   }
 
-  .bio-list-last-item {
-    position: relative;
-  }
-
-  .bio-list-last-item::after {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    margin-top: 12px;
-    content: '';
-    width: 333px;
-    height: 226px;
-    background-image: url('../../img/aboutme/decor-bg-2-tab.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .bio-list-last-item::after {
-      background-image: url('../../img/aboutme/decor-bg-2-tab-2x.png');
+        .aboutme-container {
+            background-image: url('/img/backgrounds/decor-bg-2.png');
+        }
     }
-  }
-
+  
   .aboutme-second-block {
     display: flex;
     flex-direction: row;
     gap: 32px;
   }
-
 
   .aboutme-education {
     width: 336px;
@@ -250,7 +195,7 @@
         padding-top: 164px;
         padding-bottom: 164px;
         background-size: 380px 258px;
-        background-position: 864px 856px;
+        background-position: 864px 692px;
     }
 
     .aboutme-bio-list {
@@ -272,7 +217,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .aboutme-container {
-            background-image: url("/img/backgrounds/decor-bg-2-2x.png");
+            background-image: url('/img/backgrounds/decor-bg-2.png');
         }
     }
 
@@ -289,4 +234,3 @@
         width: 384px;
     }
 }
-  
