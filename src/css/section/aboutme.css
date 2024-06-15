@@ -222,11 +222,12 @@
     gap: 136px;
   }
 
+  .aboutme-role {
+    width: 384px;
+  }
+
   .aboutme-education {
     width: 384px;
   }
 
-  .aboutme-role {
-    width: 384px;
-  }
 }
