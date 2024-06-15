@@ -163,10 +163,10 @@
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-position: top 16px right 32px; */
-    background-image: url('/img/backgrounds/decor-bg-2.png');
+    background-image: url('/img/benefits/decoration.png');
     background-repeat: no-repeat;
-    background-size: 333px 226px;
-    background-position: 400px 980px;
+    background-size: 526px 408px;
+    background-position: top 16px right 32px;
   }
 
   .benefits-container {
