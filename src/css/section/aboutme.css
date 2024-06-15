@@ -129,9 +129,6 @@
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-  }
-
-  .aboutme-container {
     padding-top: 124px;
     padding-bottom: 124px;
   }
@@ -198,20 +195,20 @@
         background-position: 864px 692px;
     }
 
-    .aboutme-bio-list {
-        margin-bottom: 232px;
-    }
+  .aboutme-bio-list {
+    margin-bottom: 232px;
+  }
 
-    .aboutme-first-block {
-        padding-left: 208px;
-        gap: 136px;
-        margin-bottom: 80px;
-    }
+  .aboutme-first-block {
+    padding-left: 208px;
+    gap: 136px;
+    margin-bottom: 80px;
+  }
 
-    .aboutme-img {
-        width: 384px;
-        height: 448px;
-    }
+  .aboutme-img {
+    width: 384px;
+    height: 448px;
+  }
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -221,16 +218,16 @@
         }
     }
 
-    .aboutme-second-block {
-        padding-left: 208px;
-        gap: 136px;
-    }
+  .aboutme-second-block {
+    padding-left: 208px;
+    gap: 136px;
+  }
 
-    .aboutme-education {
-        width: 384px;
-    }
+  .aboutme-education {
+    width: 384px;
+  }
 
-    .aboutme-role {
-        width: 384px;
-    }
+  .aboutme-role {
+    width: 384px;
+  }
 }
