@@ -1,3 +1,6 @@
+.aboutme {
+  margin-to: 80px;
+}
 .container {
   max-width: 375px;
   padding-left: 20px;
@@ -10,10 +13,6 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: rgb(var(--var-bg));
-  background-image: url('/img/backgrounds/decor-bg-2.png');
-  background-repeat: no-repeat;
-  background-size: 333px 226px;
-  background-position: 400px 980px;
 }
 
 .aboutme-title {
@@ -142,6 +141,9 @@
 /* ===============MEDIA 768============== */
 
 @media screen and (min-width: 768px) {
+  .aboutme {
+    padding-top: 124px;
+  }
   .container {
     max-width: 768px;
     padding-left: 32px;
@@ -191,28 +193,28 @@
     margin-bottom: 80px;
   }
 
-  .bio-list-last-item {
+  /* .aboutme-bio {
     position: relative;
   }
 
-  .bio-list-last-item::after {
+  .aboutme-bio::after {
+    content: '';
     position: absolute;
     left: 0;
-    top: 100%;
-    margin-top: 12px;
-    content: '';
+    bottom: -12px;
     width: 333px;
-    height: 226px;
-    background-image: url('../../img/aboutme/decor-bg-2-tab.png');
+    height: 252px;
+    background-image: url('/img/aboutme/decor-bg-2-tab.png');
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    z-index: -1;
+  } */
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .bio-list-last-item::after {
-      background-image: url('../../img/aboutme/decor-bg-2-tab-2x.png');
+      background-image: url('/img/aboutme/decor-bg-2-tab-2x.png');
     }
   }
 
@@ -234,15 +236,18 @@
 /* ===============MEDIA 1280============== */
 
 @media screen and (min-width: 1280px) {
+  .aboutme {
+    margin-top: 124px;
+  }
   .container {
     max-width: 1280px;
   }
 
   .aboutme-container {
-    padding-top: 164px;
-    padding-bottom: 164px;
-    background-size: 380px 258px;
-    background-position: 864px 856px;
+    background-image: url('/img/backgrounds/decor-bg-2.png');
+    background-repeat: no-repeat;
+    background-size: 384px 288px;
+    background-position: top 692px right 32px;
   }
 
   .aboutme-bio-list {
