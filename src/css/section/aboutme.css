@@ -1,5 +1,5 @@
 .aboutme {
-  margin-to: 80px;
+  margin-top: 80px;
 }
 .container {
   max-width: 375px;
@@ -254,6 +254,13 @@
     background-position: top 692px right 32px;
   }
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .aboutme-container {
+      background-image: url('/img/backgrounds/decor-bg-2-2x.png');
+    }
+  }
   .aboutme-bio-list {
     margin-bottom: 232px;
   }
@@ -267,14 +274,6 @@
   .aboutme-img {
     width: 384px;
     height: 448px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .aboutme-container {
-      background-image: url('/img/backgrounds/decor-bg-2-2x.png');
-    }
   }
 
   .aboutme-second-block {
