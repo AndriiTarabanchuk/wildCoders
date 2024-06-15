@@ -23,7 +23,7 @@
   font-weight: 400;
 
   color: rgb(var(--var-text));
-
+  background-color: rgb(var(--var-bg));
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
