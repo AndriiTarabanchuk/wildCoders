@@ -1,14 +1,12 @@
-.container {
+.worktog {
   min-width: 320px;
   width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-.worktog.container {
-  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
   color: rgb(var(--var-text));
   background-color: rgb(var(--var-bg));
+  border: 1px solid red;
 }
 .worktog-wrap {
   display: flex;
@@ -139,14 +137,15 @@
 .form-btn:active {
   background-color: rgb(var(--var-text-green));
 }
-@media screen and (min-width: 360px) {
+/* @media screen and (min-width: 360px) {
   .container {
     max-width: 360px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
     max-width: 0 auto;
   }
-}
+} */
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
