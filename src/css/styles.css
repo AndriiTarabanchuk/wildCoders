@@ -74,20 +74,3 @@ color: rgb(var(--var-text))
 color: rgba(var(--var-text), 0.1)
 
 */
-<<<<<<< HEAD
-
-.logo-text {
-  font-family: 'Impact', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1.5px;
-  color: rgb(var(--var-text));
-  text-transform: uppercase;
-}
-
-.logo-text span {
-  color: rgb(var(--var-text-green));
-}
-=======
->>>>>>> origin/main

@@ -1,14 +1,13 @@
 .worktog {
+  background-color: rgb(var(--var-bg));
+}
+.worktog-wrap {
   min-width: 320px;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 50px;
   color: rgb(var(--var-text));
-  background-color: rgb(var(--var-bg));
-  border: 1px solid red;
-}
-.worktog-wrap {
   display: flex;
   flex-direction: column;
 }
