@@ -1,20 +1,19 @@
-const formDom = document.querySelector('.worktog-form');
-const iconSuccessForm = document.querySelector('.worktog-form-icon');
-
-const backdropDom = document.querySelector('.backdrop');
-const modalBtnCloseDom = document.querySelector('.worktog-modal-btn');
-
-console.log(modalBtnCloseDom);
-const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+\.[a-zA-Z]{2,3}$/;
-const { email, message } = formDom.elements;
-
-const btnModalDom = document.querySelector('worktog-modal-button');
 // Описаний у документації
 import iziToast from 'izitoast';
 // Додатковий імпорт стилів
 import 'izitoast/dist/css/iziToast.min.css';
 
+const formDom = document.querySelector('.worktog-form');
+const iconSuccessForm = document.querySelector('.worktog-form-icon');
+const backdropDom = document.querySelector('.backdrop');
+const modalBtnCloseDom = document.querySelector('.worktog-modal-btn');
+const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+\.[a-zA-Z]{2,3}$/;
+const dataSend = { email: '', comment: '' };
+const BASE_URL_POST = 'https://portfolio-js.b.goit.study/api/requests';
+const modalWrapperDom = document.querySelector('.worktog-modal-wrapper');
+
 formDom.addEventListener('input', handleChange);
+
 function handleChange(event) {
   if (event.target.name === 'email' && event.target.value) {
     if (pattern.test(`${event.target.value}`)) {
@@ -22,53 +21,49 @@ function handleChange(event) {
     } else {
       iconSuccessForm.classList.remove('valid');
     }
+    dataSend.email = event.target.value;
   }
-  if (event.target.name === 'massage' && event.target.value) {
-    console.log(event.target.value);
+  if (event.target.name === 'message' && event.target.value) {
+    dataSend.comment = event.target.value;
   }
-  // реба додати локалсторадж для зберігання данних
 }
 
-const BASE_URL = 'https://portfolio-js.b.goit.study/api';
-const END_POPINT_GET = '/reviews';
-const END_POPINT_POST = '/requests';
-const curUrlGet = BASE_URL + END_POPINT_GET;
-const curUrlPost = BASE_URL + END_POPINT_POST;
 formDom.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
   event.target.default = true;
-  // треба додати локалсторадж для отримання данних
-  // fetch(`${curUrlPost}`, {
-  //   methon: 'PATCH',
-  //   headers: {
-  //     'Context-Type': 'application/json',
-  //   },
-  //   body: JSON.stringify({
-  //     complited: true,
-  //   }),
-  // });
 
-  fetch(curUrlGet)
-    .then(data => {
-      if (!data.ok) {
-        iziToast.error({
-          title: 'Warning',
-          message: `Data.status is ${data.status} unseccess!`,
-        });
-        throw new Error(data.status);
+  fetch(BASE_URL_POST, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(dataSend),
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
+      return response.json();
+    })
+    .then(data => {
+      modalWrapperDom.innerHTML = `
+      <h3 class="worktog-modal-title">${data.title}</h3> 
+      <p class="wortog-modal-text">${data.message}</p>`;
       backdropDom.classList.add('is-open');
       getModal();
     })
     .catch(error => {
       iziToast.error({
         title: 'Warning',
-        message: `Get data for ${curUrlGet} unseccess!`,
+        message: `Data status is ${error.message} unsuccessful!`,
       });
+      console.log(error);
     })
-    .finally((event.target.default = false));
+    .finally(() => {
+      event.target.default = false;
+    });
 
   iconSuccessForm.classList.remove('valid');
   formDom.reset();
