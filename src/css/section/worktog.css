@@ -69,7 +69,10 @@
   letter-spacing: 0.015em;
   text-align: left;
 }
-
+.worktog-link:hover {
+  color: rgb(var(--var-text-green));
+  transform: scale(1.1);
+}
 .worktog-form {
   width: 288px;
   width: 100%;
