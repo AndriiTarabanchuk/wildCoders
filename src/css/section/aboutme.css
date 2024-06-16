@@ -41,14 +41,14 @@
 }
 
 .aboutme-subtitle {
-    color: rgb(var(--var-text));
-    margin-bottom: 32px;
-    font-family: "Poppins", sans-serif;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+  color: rgb(var(--var-text));
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .aboutme-text {
@@ -116,20 +116,18 @@
   border-radius: 1px;
   background-color: rgb(var(--var-text-green));
   display: block;
-
 }
 
 /* ===============MEDIA 768============== */
 
 @media screen and (min-width: 768px) {
-  
   .aboutme-container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 124px;
     padding-bottom: 124px;
-    background-image: url("/img/backgrounds/decor-bg-2-2x.png");
+    background-image: url('/img/backgrounds/decor-bg-2-2x.png');
     background-repeat: no-repeat;
     background-size: 330px 252px;
     background-position: 394px 968px;
@@ -162,11 +160,11 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .aboutme-container {
-            background-image: url('/img/backgrounds/decor-bg-2-2x.png');
-        }
+    .aboutme-container {
+      background-image: url('/img/backgrounds/decor-bg-2-2x.png');
     }
-  
+  }
+
   .aboutme-second-block {
     display: flex;
     flex-direction: row;
@@ -185,7 +183,6 @@
 /* ===============MEDIA 1280============== */
 
 @media screen and (min-width: 1280px) {
-
   .aboutme-container {
     max-width: 1280px;
     padding-top: 164px;
@@ -194,6 +191,13 @@
     background-position: 864px 856px;
   }
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .aboutme-container {
+      background-image: url('/img/backgrounds/decor-bg-2-2x.png');
+    }
+  }
   .aboutme-bio-list {
     margin-bottom: 232px;
   }
@@ -209,14 +213,13 @@
     height: 448px;
   }
 
-    @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .aboutme-container {
-            background-image: url('/img/backgrounds/decor-bg-2-2x.png');
-        }
+    .aboutme-container {
+      background-image: url('/img/backgrounds/decor-bg-2-2x.png');
     }
-
+  }
   .aboutme-second-block {
     padding-left: 208px;
     gap: 136px;
@@ -229,5 +232,4 @@
   .aboutme-education {
     width: 384px;
   }
-
 }

@@ -2,6 +2,14 @@
 
 # trello https://trello.com/b/eyQvOgD2/project-team-11-wild-coders
 
+# adds section:- Header- Hero- About me- Tech Skills- My projects- Benefits- FAQ- Reviews- Work together- Footer
+
+# Frontend Tooling - https://vitejs.dev/
+
+# Notification - https://simplelightbox.com/
+
+# Touch-friendly https://izitoast.marcelodolza.com/
+
 # Vanilla App Template
 
 Цей проект було створено за допомогою Vite. Для знайомства та налаштування

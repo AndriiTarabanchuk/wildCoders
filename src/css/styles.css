@@ -47,6 +47,23 @@
   --var-grey-hover: 59, 63, 69; /* #BBBBB */
 }
 
+[dark-fiolet] {
+  --var-text: 240, 240, 240; /* 1e2023 */
+  --var-text-green: 193, 86, 214; /* #c156D6 */
+  --var-bg: 30, 32, 35; /* #f0f0f0 */
+  --var-bg-gray: 42, 45, 50; /* #2a2d32 */
+  --var-accent: 60, 38, 64; /* #3C2640 */
+  --var-grey-hover: 59, 63, 69; /* #BBBBB */
+}
+
+[light-fiolet] {
+  --var-text: 240, 240, 240; /* 1e2023 */
+  --var-text-green: 161, 57, 151; /* #139997 */
+  --var-bg: 30, 32, 35; /* #f0f0f0 */
+  --var-bg-gray: 42, 45, 50; /* #2a2d32 */
+  --var-accent: 224, 197, 222; /* #e0c5de */
+  --var-grey-hover: 59, 63, 69; /* #BBBBB */
+}
 /*
 Використання змінних кольорів:
 
