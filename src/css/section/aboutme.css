@@ -3,11 +3,6 @@
 }
 
 .aboutme-container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: rgb(var(--var-bg));
@@ -35,8 +30,8 @@
 }
 
 .aboutme-img {
-  width: 320px;
-  height: 374px;
+  max-width: 320px;
+  max-height: 374px;
   border-radius: 16px;
 }
 
@@ -122,9 +117,6 @@
 
 @media screen and (min-width: 768px) {
   .aboutme-container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
     padding-top: 124px;
     padding-bottom: 124px;
     background-image: url('/img/backgrounds/decor-bg-2-2x.png');
@@ -147,8 +139,8 @@
   }
 
   .aboutme-img {
-    width: 336px;
-    height: 392px;
+    max-width: 336px;
+    max-height: 392px;
     margin-bottom: 0px;
     flex-shrink: 0;
   }
@@ -184,7 +176,6 @@
 
 @media screen and (min-width: 1280px) {
   .aboutme-container {
-    max-width: 1280px;
     padding-top: 164px;
     padding-bottom: 164px;
     background-size: 380px 258px;
@@ -209,8 +200,8 @@
   }
 
   .aboutme-img {
-    width: 384px;
-    height: 448px;
+    max-width: 384px;
+    max-height: 448px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
