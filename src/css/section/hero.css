@@ -55,11 +55,7 @@
   display: flex;
   align-items: center;
 }
-/* @media screen and (max-width: 360px) {
-  .hero-btn-link {
-    width: 100%;
-  }
-} */
+
 .hero-btn-arrow {
   fill: rgb(var(--var-text-green));
   margin-right: 12px;
