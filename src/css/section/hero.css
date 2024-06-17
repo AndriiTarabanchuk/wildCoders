@@ -45,7 +45,7 @@
   position: relative;
   border: none;
   background-color: transparent;
-  width: 320px;
+  max-width: 320px;
   height: 92px;
   font-size: 18px;
   line-height: 1.56;
@@ -55,7 +55,11 @@
   display: flex;
   align-items: center;
 }
-
+/* @media screen and (max-width: 360px) {
+  .hero-btn-link {
+    width: 100%;
+  }
+} */
 .hero-btn-arrow {
   fill: rgb(var(--var-text-green));
   margin-right: 12px;
