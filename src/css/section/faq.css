@@ -1,10 +1,6 @@
 .faq-section {
   background-color: rgb(var(--var-bg));
 }
-.faq-container {
-  min-width: 320px;
-  width: 100%;
-}
 
 .faq-header {
   color: rgb(var(--var-text));
@@ -155,12 +151,12 @@ button.ac-trigger svg {
     align-items: flex-start;
     gap: 104px;
     background-image: image-set(
-      '../img/backgrounds/decor-bg-4.png' 1x,
-      '../img/backgrounds/decor-bg-4-2x.png' 2x
+      '/img/backgrounds/decor-bg-4.png' 1x,
+      '/img/backgrounds/decor-bg-4-2x.png' 2x
     );
     background-position: left 32px bottom;
     background-repeat: no-repeat;
-    background-size: 526px 408px;
+    background-size: top 623px left 32px;
   }
 
   .faq-header {
