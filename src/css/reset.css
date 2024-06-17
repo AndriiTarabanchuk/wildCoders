@@ -47,9 +47,11 @@ img {
 .logo-text span {
   color: rgb(var(--var-text-green));
 }
-
+body {
+  background-color: rgb(var(--var-bg));
+}
 .container {
-  max-width: 375px;
+  max-width: 360px;
   padding: 0 20px;
   margin: 0 auto;
 }
