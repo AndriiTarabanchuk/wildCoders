@@ -416,5 +416,6 @@
   .worktog-modal {
     --mod-height: 280px;
     --mod-width: 492px;
+    align-items: normal;
   }
 }
