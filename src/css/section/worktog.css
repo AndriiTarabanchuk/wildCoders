@@ -3,9 +3,12 @@
   background-color: rgb(var(--var-bg));
 }
 .worktog-wrap {
+  min-width: 320px;
   width: 100%;
+  max-width: 360px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 80px;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -32,7 +35,7 @@
 }
 
 .worktog-soc {
-  max-width: 253px;
+  width: 253px;
   display: flex;
   flex-direction: column;
 }
@@ -72,6 +75,7 @@
   transform: scale(1.1);
 }
 .worktog-form {
+  width: 288px;
   width: 100%;
   margin-top: 40px;
   font-family: 'Poppins', sans-serif;
@@ -89,7 +93,7 @@
 }
 .form-field > svg {
   position: absolute;
-  top: 10px;
+  top: 30%;
   right: 16px;
   width: 14px;
   height: 14px;
@@ -99,21 +103,20 @@
   z-index: 2;
 }
 .form-input {
+  min-width: 288px;
   width: 100%;
   padding: 8px 16px;
   border-radius: 8px;
   gap: 10px;
   border: none;
   color: rgba(var(--var-text), 0.4);
+
   background-color: rgb(var(--var-bg-gray));
   transition: 250ms ease;
-  box-shadow: -5px -5px 10px rgb(var(--var-bg-gray)),
-    5px 5px 10px rgb(var(--var-bg-gray));
 }
 .form-input:active,
 .form-input:focus {
   color: var(--var-text);
-  background-color: rgb(var(--var-bg-gray));
 }
 
 .form-input:hover {
@@ -128,6 +131,7 @@
 }
 
 .form-message {
+  min-width: 288px;
   width: 100%;
   height: 128px;
   padding: 8px 16px;
@@ -136,19 +140,18 @@
   resize: none;
   background-color: rgb(var(--var-bg-gray));
   color: rgba(var(--var-text), 0.4);
-  box-shadow: -5px -5px 10px rgb(var(--var-bg-gray)),
-    5px 5px 10px rgb(var(--var-bg-gray));
 }
 .form-message:active,
 .form-message:focus {
   color: rgb(var(--var-text));
-  background-color: rgb(var(--var-bg-gray));
+  opacity: 1;
 }
 .form-message:hover {
   box-shadow: -1px -1px 5px rgb(var(--var-bg-gray)),
     1px 1px 5px rgb(var(--var-bg-gray));
 }
 .form-btn {
+  min-width: 288px;
   width: 100%;
   border: none;
   padding: 12px 24px;
@@ -165,6 +168,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 200ms ease-in-out;
 }
 
 .form-btn:hover,
@@ -175,9 +179,11 @@
 @media screen and (min-width: 768px) {
   .worktog-wrap {
     max-width: 768px;
+    padding-bottom: 124px;
     padding-left: 32px;
     padding-right: 32px;
     max-width: 0 auto;
+    padding-top: 124px;
     background-image: url('/img/worktog/decor-bg-4-des-1x.png');
     background-repeat: no-repeat;
     background-size: 336px 260px;
@@ -201,14 +207,14 @@
     text-align: left;
   }
   .worktog-first {
-    width: 100%;
+    max-width: 100%;
     padding-top: 60px;
     display: flex;
     gap: 10px;
     justify-content: space-between;
   }
   .worktog-soc {
-    max-width: 488px;
+    width: 488px;
     display: flex;
     flex-direction: column;
   }
@@ -232,7 +238,6 @@
   } */
   .form-input {
     color: rgba(var(--var-text), 0.4);
-    background-color: rgb(var(--var-bg-grey));
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -244,7 +249,6 @@
   }
   .form-message {
     color: rgb(var(--var-text));
-    background-color: rgb(var(--var-bg-grey));
     border: none;
     outline: none;
   }
@@ -269,12 +273,21 @@
   .worktog-wrap {
     max-width: 1280px;
     padding-top: 164px;
+    padding-bottom: 164px;
     background-image: url('/img/worktog/decor-bg-4-des-1x.png');
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-position: top 20px right 32px;
     display: flex;
     flex-direction: column;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .aboutme-container {
+      background-image: url('/img/worktog/decor-bg-4-des-2x.png');
+    }
   }
 
   .worktog-first {
@@ -284,7 +297,7 @@
     flex-direction: row;
   }
   .worktog-soc {
-    min-width: 592px;
+    width: 592px;
   }
   /* .worktog-soc-subtitle {
   } */
@@ -301,6 +314,9 @@
   }
   .worktog-first {
     flex-direction: row;
+  }
+  .worktog-form {
+    width: 592px;
   }
 }
 
@@ -325,14 +341,14 @@
 .is-open {
   right: 0;
   opacity: 1;
-  background-color: rgba(var(--var-text), 0.8);
+  background-color: rgba(var(--var-bg-backdrop));
   visibility: visible;
   pointer-events: auto;
   overflow: hidden;
 }
 
 .worktog-modal {
-  background-color: rgb(var(--var-bg));
+  background-color: rgb(var(--var-bg-modal));
   color: rgb(var(--var-text-green));
   position: absolute;
   --mod-height: 328px;
@@ -384,18 +400,16 @@
   position: absolute;
   right: 8px;
   top: 8px;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
 }
 .worktog-modal-icon {
-  stroke: rgb(var(--var-text));
-}
-.worktog-modal-btn:hover {
-  transform: scale(1.5);
+  fill: rgb(var(--var-text));
 }
 
 @media screen and (min-width: 768px) {
