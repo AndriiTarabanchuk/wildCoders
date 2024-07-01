@@ -341,14 +341,14 @@
 .is-open {
   right: 0;
   opacity: 1;
-  background-color: rgba(var(--var-bg-backdrop));
+  background-color: rgba(var(--var-text), 0.8);
   visibility: visible;
   pointer-events: auto;
   overflow: hidden;
 }
 
 .worktog-modal {
-  background-color: rgb(var(--var-bg-modal));
+  background-color: rgb(var(--var-bg));
   color: rgb(var(--var-text-green));
   position: absolute;
   --mod-height: 328px;

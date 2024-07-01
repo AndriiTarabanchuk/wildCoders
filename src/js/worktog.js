@@ -24,7 +24,9 @@ function handleChange(event) {
     dataSend.email = event.target.value;
   }
   if (event.target.name === 'message' && event.target.value) {
-    dataSend.comment = event.target.value;
+    if (event.target.value.trim().length !== 0) {
+      dataSend.comment = event.target.value.trim();
+    }
   }
 }
 
@@ -32,8 +34,14 @@ formDom.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+  if (!dataSend.comment) {
+    iziToast.error({
+      title: 'Warning',
+      message: `Please fill message area!`,
+    });
+    return;
+  }
   event.target.default = true;
-
   fetch(BASE_URL_POST, {
     method: 'POST',
     headers: {
